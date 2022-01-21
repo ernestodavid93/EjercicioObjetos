@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hola"></div>
+    <div id="hola2"></div>
+    
+    
+
+
+    <script>
+        let articulo = {
+    nombre: "Caguamas",
+    descripcion: "Bien helodias" ,
+    precio: 25,
+    cantidad: 30,
+    imagen: "https://blog.tacoguru.com/wp-content/uploads/2018/} /Template-Blog-No-Carrusel-4.png",
+    concatenar: function(){
+        return `${this.nombre} ${this.descripcion} ${this.precio} ${this.cantidad}`
+    },
+    
+}
+document.getElementById("hola").innerHTML = articulo.concatenar();
+
+
+let venta = {
+    articulos: {
+        nombre: "Caguamas"
+    },
+    total: articulo.cantidad * articulo.precio,
+    ID: 1234,
+    mail: "equipo6@gmail.com",
+    conca: function (){
+        return `${this.articulos.nombre} ${this.total} ${this.ID} ${this.mail}`
+    }
+}
+
+document.getElementById('hola2').innerHTML = venta.conca();
+
+
+    </script>
+</body>
+</html>
